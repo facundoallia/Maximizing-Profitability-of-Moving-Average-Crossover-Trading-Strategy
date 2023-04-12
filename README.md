@@ -15,4 +15,35 @@ Para un primer ejemplo, analizamos 10 años del historial de precios diarios de 
 
 ![Gráfico ARKK Moving Average Crossover](Assets/arkk_ma.png)
 
+Pero, ¿y si cambiamos STMA a 20 y STMA a 40? ¿O STMA a 9 y STMA a 21? Teniendo en cuenta que los MA más comunes son 5, 7, 9, 10, 20, 21, 30, 40, 50, 100 y 200, podemos analizar los rendimientos y las pérdidas de diferentes MA combinados.
+
+# Matriz retornos con distintas Medias Moviles
+
+![Gráfico ARKK Moving Average Crossover](Assets/arkk_ma_ret_matrix.png)
+
+Como podemos ver en el gráfico anterior, las estrategias con diferentes combinaciones de medias móviles pueden lograr rendimientos desiguales.
+Las 2 mejores combinaciones para el período analizado son:
++ STMA:50, LTMA:200 con una rentabilidad acumulada de 4,5 (451,48 %)
++ STMA:7, LTMA:50 con una rentabilidad acumulada de 4,2 (421,29 %)
+
+200, 50 y 40 parecen ser buenas opciones para elegir como LTMA para este valor pero no está demasiado claro elegir un buen candidato para STMA.
+
+Complementariamente, podemos analizar los drawdowns para diferentes combinaciones de medias móviles como hicimos con los rendimientos.
+
+# Matriz de drawdowns con diferentes medias móviles
+
+![Gráfico ARKK Moving Average Crossover](Assets/arkk_ma_dd_matrix.png)
+
+Nuevamente, vemos métricas positivas en estrategias que funcionan con 40 y 200 LTMA para este activo. Por otro lado, la matriz presenta altas reducciones para números rápidos como STMA:5//LTMA:10 o STMA:7//LTMA:9.
+
+# Pensamientos finales
+
+A través del estudio realizado se puede observar cómo la elección de diferentes medias móviles puede afectar a los resultados de la estrategia. Sin embargo, se debe tener mucho cuidado al parametrizar posibles estrategias, ya que el estudio muestra resultados sobre cotizaciones pasadas (ver in-sample vs out-of-sample para más información).
+
+Además, es muy importante tener en cuenta que para aplicar esta estrategia en un entorno real, se deben sumar al análisis las comisiones, así como el efecto de deslizamiento. Esto probablemente reduce el rendimiento de las estrategias, pero sería posible agregar otras reglas, como invertir a una tasa libre de riesgo cuando no se opera, vender en corto cuando se observa una señal de venta, etc.
+
+
+
+
+
 
