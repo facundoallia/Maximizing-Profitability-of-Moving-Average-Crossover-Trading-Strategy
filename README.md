@@ -1,5 +1,8 @@
 # Estrategia de cruce de medias simples: ¿Qué medias móviles usar?
 
+[Check english version there](https://medium.com/@facujallia/maximizing-profitability-of-moving-average-crossover-trading-strategy-what-moving-averages-to-use-e5cd70085690)
+
+
 El cruce de medias o  Moving Average Crossover es una de las estrategias mas basicas en trading, ademas es un buen punto de partida de muchas estrategias mas complejas.  Utiliza dos promedios móviles para predecir las tendencias del mercado y los puntos de entrada/salida.
 
 Para implementar esta estrategia, primero calculamos los promedios móviles a corto y largo plazo del precio de un valor. Estos promedios móviles pueden tener diferentes longitudes y están diseñados matemáticamente para tener diferentes variaciones y tasas de dirección. Cuando los dos promedios móviles se cruzan, es una señal para comprar o vender el valor.
