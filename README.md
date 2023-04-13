@@ -20,7 +20,7 @@ Para un primer ejemplo, analizamos 10 años del historial de precios diarios de 
 
 Pero, ¿y si cambiamos STMA a 20 y STMA a 40? ¿O STMA a 9 y STMA a 21? Teniendo en cuenta que los MA más comunes son 5, 7, 9, 10, 20, 21, 30, 40, 50, 100 y 200, podemos analizar los rendimientos y las pérdidas de diferentes MA combinados.
 
-# Matriz retornos con distintas Medias Moviles
+## Matriz retornos con distintas Medias Moviles
 
 ![Gráfico ARKK Moving Average Crossover](Assets/arkk_ma_ret_matrix.png)
 
@@ -39,7 +39,7 @@ Complementariamente, podemos analizar los drawdowns para diferentes combinacione
 
 Nuevamente, vemos métricas positivas en estrategias que funcionan con 40 y 200 LTMA para este activo. Por otro lado, la matriz presenta altas reducciones para números rápidos como STMA:5//LTMA:10 o STMA:7//LTMA:9.
 
-# Pensamientos finales
+## Pensamientos finales
 
 A través del estudio realizado se puede observar cómo la elección de diferentes medias móviles puede afectar a los resultados de la estrategia. Sin embargo, se debe tener mucho cuidado al parametrizar posibles estrategias, ya que el estudio muestra resultados sobre cotizaciones pasadas (ver in-sample vs out-of-sample para más información).
 
